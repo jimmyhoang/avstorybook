@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "StoryBook.h"
 
 @interface StoryPartViewController : UIViewController
+
+@property (nonatomic, strong) StoryBook* storyPage;
+@property (nonatomic, assign) int pageNumber;
+
 
 @end

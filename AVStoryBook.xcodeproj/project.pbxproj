@@ -15,6 +15,7 @@
 		FF9366B31EF4778E00AFB1C2 /* AVStoryBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9366B21EF4778E00AFB1C2 /* AVStoryBookTests.m */; };
 		FF9366BF1EF478A300AFB1C2 /* StoryBook.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9366BE1EF478A300AFB1C2 /* StoryBook.m */; };
 		FF9366C21EF485C600AFB1C2 /* StoryPartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9366C11EF485C600AFB1C2 /* StoryPartViewController.m */; };
+		FF9366C51EF7312300AFB1C2 /* StoryBookPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FF9366C41EF7312300AFB1C2 /* StoryBookPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		FF9366BE1EF478A300AFB1C2 /* StoryBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBook.m; sourceTree = "<group>"; };
 		FF9366C01EF485C600AFB1C2 /* StoryPartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryPartViewController.h; sourceTree = "<group>"; };
 		FF9366C11EF485C600AFB1C2 /* StoryPartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryPartViewController.m; sourceTree = "<group>"; };
+		FF9366C31EF7312300AFB1C2 /* StoryBookPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StoryBookPageViewController.h; sourceTree = "<group>"; };
+		FF9366C41EF7312300AFB1C2 /* StoryBookPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StoryBookPageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				FF9366BE1EF478A300AFB1C2 /* StoryBook.m */,
 				FF9366C01EF485C600AFB1C2 /* StoryPartViewController.h */,
 				FF9366C11EF485C600AFB1C2 /* StoryPartViewController.m */,
+				FF9366C31EF7312300AFB1C2 /* StoryBookPageViewController.h */,
+				FF9366C41EF7312300AFB1C2 /* StoryBookPageViewController.m */,
 				FF9366A11EF4778E00AFB1C2 /* Main.storyboard */,
 				FF9366981EF4778E00AFB1C2 /* Supporting Files */,
 			);
@@ -220,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF9366C51EF7312300AFB1C2 /* StoryBookPageViewController.m in Sources */,
 				FF93669D1EF4778E00AFB1C2 /* AppDelegate.m in Sources */,
 				FF93669A1EF4778E00AFB1C2 /* main.m in Sources */,
 				FF9366BF1EF478A300AFB1C2 /* StoryBook.m in Sources */,
