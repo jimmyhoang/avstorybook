@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Story Part View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="StoryPartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XRn-KH-z3s">
+                                <rect key="frame" x="37" y="183" width="300" height="300"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="83r-Dy-DdK"/>
+                                    <constraint firstAttribute="width" constant="300" id="Jf8-wD-I2v"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="vVP-ig-zlq" appends="YES" id="ojV-k7-lpx"/>
+                                </connections>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vQZ-LU-aCO">
+                                <rect key="frame" x="37" y="561" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                                <connections>
+                                    <action selector="cameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awO-5S-yA2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7eL-3Z-h7h">
+                                <rect key="frame" x="288" y="561" width="49" height="30"/>
+                                <state key="normal" title="Record"/>
+                                <connections>
+                                    <action selector="recordButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T0m-j3-SFS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7eL-3Z-h7h" firstAttribute="top" secondItem="XRn-KH-z3s" secondAttribute="bottom" constant="78" id="4xQ-uV-eph"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7eL-3Z-h7h" secondAttribute="bottom" constant="76" id="BvO-zF-w1Z"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7eL-3Z-h7h" secondAttribute="trailing" constant="22" id="HR3-xf-dId"/>
+                            <constraint firstItem="XRn-KH-z3s" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IzF-CM-UMo"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="vQZ-LU-aCO" secondAttribute="bottom" constant="76" id="RuV-9d-Dzr"/>
+                            <constraint firstItem="XRn-KH-z3s" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U20-Ym-538"/>
+                            <constraint firstItem="vQZ-LU-aCO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="YiQ-e6-0uI"/>
+                            <constraint firstItem="vQZ-LU-aCO" firstAttribute="top" secondItem="XRn-KH-z3s" secondAttribute="bottom" constant="78" id="mwg-Sz-h2y"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="XRn-KH-z3s" id="w0M-nG-SYE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="vVP-ig-zlq">
+                    <connections>
+                        <action selector="imageTapped:" destination="BYZ-38-t0r" id="95f-uD-wm3"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
